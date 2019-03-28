@@ -1,0 +1,125 @@
+.ht-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.ht-header {
+    display: flex;
+    padding: 6.4vw 2.4vw 5.6vw;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: left;
+}
+
+.ht-search {
+    position: relative;
+    padding: 6.8vw 2.4vw 3.2vw;
+    border-top: 0.266vw solid #1699e5;
+    overflow-x: scroll;
+}
+
+.ht-search-line {
+    position: fixed;
+    top: 21vw;
+    left: 0;
+    width: 200vw;
+    height: 4.61vw;
+    animation: move 12s linear infinite;
+    background: url('../img/line_right.png') repeat-x center / 50vw;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100vw;
+    }
+}
+
+.ht-search-window {
+    display: flex;
+    width: fit-content;
+}
+
+.ht-search-btn {
+    width: 22vw;
+    height: 8vw;
+    margin-right: 2.4vw;
+    line-height: 8vw;
+    outline: none;
+    border: 0.266vw solid #1699e5;
+    border-radius: 1.2vw;   
+}
+
+.ht-nav {
+    display: flex;
+    padding-top: 2.4vw;
+    padding-bottom: 4vw;
+    flex-wrap: wrap;
+    border-bottom: 1.333vw solid #1699e5;
+    box-sizing: border-box;
+}
+
+.ht-nav-column {
+    display: flex;
+    flex-basis: 25vw;
+    line-height: 6.8vw;
+    padding: 0 2.4vw 1.8vw;
+    margin-bottom: 4vw;
+    /* text-align: left; */
+    flex-direction: column;
+    border-right: 0.266vw solid #1699e5;
+    box-sizing: border-box;
+}
+
+.ht-nav :nth-child(4n) {
+    border-right: 0;
+}
+
+.ht-main {
+    display: flex;
+    padding: 4.8vw 2.4vw 0;
+    flex-direction: column;
+}
+
+.ht-main-subtitle {
+    display: flex;
+    margin-bottom: 4vw;
+    text-align: left;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.ht-main-row {
+    height: 47.083vw;
+    margin-bottom: 6vw;
+    background: url('../img/bg_2.png') no-repeat center / 95.2vw 47.083vw;
+}
+
+/*! Basic Class Module */
+.ht-fs-12 {
+    font-size: 3.2vw;
+}
+
+.ht-fs-14 {
+    font-size: 3.733vw;
+}
+
+.ht-fs-18 {
+    font-size: 4.8vw;
+}
+
+.ht-fs-20 {
+    font-size: 5.333vw;
+}
+
+.ht-c-sE {
+    color: #eee;
+}
+
+/*! Scroll Tabs Style */
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
